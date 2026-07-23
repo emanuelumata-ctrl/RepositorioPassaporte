@@ -1,0 +1,49 @@
+type User @table {
+  email: String!
+  displayName: String!
+  role: String!
+  createdAt: Timestamp!
+  photoUrl: String
+  department: String
+}
+
+type Training @table {
+  name: String!
+  description: String!
+  durationMinutes: Int!
+  createdAt: Timestamp!
+  prerequisites: String
+  targetAudience: String
+}
+
+type Instructor @table {
+  user: User!
+  specialities: [String!]!
+  bio: String
+}
+
+type Session @table {
+  training: Training!
+  instructor: Instructor!
+  scheduledDate: Timestamp!
+  location: String!
+  status: String!
+  maxParticipants: Int
+}
+
+type Enrollment @table {
+  user: User!
+  session: Session!
+  enrollmentDate: Timestamp!
+  status: String!
+  completionDate: Timestamp
+  grade: String
+}
+
+type Material @table {
+  training: Training!
+  title: String!
+  url: String!
+  fileType: String!
+  description: String
+}

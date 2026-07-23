@@ -1,0 +1,20 @@
+{
+  "short_name": "Passaporte",
+  "name": "Passaporte do Conhecimento",
+  "icons": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/aplicativo-fes-61767803-3989d.firebasestorage.app/o/FORVIA_Symbol_F_RVB%20(1).png?alt=media&token=7a4418d6-e0cd-4882-83c6-4819f10af073",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/aplicativo-fes-61767803-3989d.firebasestorage.app/o/FORVIA_Symbol_F_RVB%20(1).png?alt=media&token=7a4418d6-e0cd-4882-83c6-4819f10af073",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

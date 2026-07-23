@@ -1,0 +1,11 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // As fotos de perfil são publicamente legíveis
+    match /profile-pictures/{userId}/{allPaths=**} {
+      allow read;
+      // Apenas o próprio usuário pode escrever em sua pasta de fotos
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

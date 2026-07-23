@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "^1.0.1",
     "base64-js": "^1.5.1",
+    "firebase": "^12.6.0",
+    "html5-qrcode": "^2.3.8",
     "markdown-it": "^13.0.2"
   },
   "devDependencies": {

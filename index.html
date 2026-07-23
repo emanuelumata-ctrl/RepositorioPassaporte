@@ -1,42 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baking with the Gemini API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte do Conhecimento</title>
+    <link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/aplicativo-fes-61767803-3989d.firebasestorage.app/o/FORVIA_Symbol_F_RVB%20(1).png?alt=media&token=7a4418d6-e0cd-4882-83c6-4819f10af073">
+    <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/aplicativo-fes-61767803-3989d.firebasestorage.app/o/FORVIA_Symbol_F_RVB%20(1).png?alt=media&token=7a4418d6-e0cd-4882-83c6-4819f10af073">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
-  <main>
-    <h1>Baking with the Gemini API</h1>
-    <form>
-      <div class="image-picker">
-        <label class="image-choice">
-          <input type="radio" checked name="chosen-image" value="/baked_goods_1.jpg">
-          <img src="/baked_goods_1.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
-          <img src="/baked_goods_2.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
-          <img src="/baked_goods_3.jpg">
-        </label>
-      </div>
-      <div class="prompt-box">
-        <label>
-          <input name="prompt" placeholder="Enter instructions here" type="text"
-            value="Provide an example recipe for the baked goods in the image">
-        </label>
-        <button type="submit">Go</button>
-      </div>
-    </form>
-    <p class="output">(Results will appear here)</p>
-  </main>
+    <div id="login-container"></div>
 
-  <script type="module" src="/main.js"></script>
+    <div id="app-container" class="container" style="display: none;">
+        <header>
+            <nav>
+                <a href="#" id="home-link" class="tab">Início</a>
+                <a href="#" id="register-link" class="tab">Registrar</a>
+                <a href="#" id="history-link" class="tab">Histórico</a>
+                <a href="#" id="stamps-link" class="tab">Selos</a>
+                <a href="#" id="admin-link" class="tab" style="display: none;">Admin</a>
+            </nav>
+        </header>
+        <main id="content" class="content">
+            <!-- Conteúdo dinâmico aqui -->
+        </main>
+        <footer class="app-footer">
+            Desenvolvido pela equipe FES&P de São José dos Pinhais
+        </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
 </body>
-
 </html>

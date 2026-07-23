@@ -1,6 +1,6 @@
-export function maybeShowApiKeyBanner(key, action = `enter it at the top of
-<code>main.js</code>`) {
-  if (key === 'TODO') {
+export function maybeShowApiKeyBanner(key, action = `set it as the VITE_GEMINI_API_KEY environment variable in
+<code>.env</code>`) {
+  if (!key) {
     let banner = document.createElement('div');
     banner.className = 'api-key-banner';
     banner.innerHTML = `
